@@ -1,0 +1,17 @@
+# Candidates may make their own small local environment, but never commit data,
+# evaluator artefacts, or credentials into a branch repository.
+.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+
+# The public CSVs are provisioned by the manager and remain untracked.
+data/
+artifacts/
+outputs/
+*.log
+
+# Never place credentials or copied hidden material in the branch repository.
+.env
+.env.*
+!/.env.example
